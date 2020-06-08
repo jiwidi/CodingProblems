@@ -32,3 +32,4 @@ class plusonelist {
         System.out.println(Arrays.toString(result));
     }
 }
+// Results are O(nlog(n))
