@@ -5,7 +5,8 @@
  * {"08:00","20:00"} Return all possible slots of time where a meeting of time X
  * could happen. Ex for time=1hour {"10:30","11:30"}
  *
- * Q: Minimun granularity 30min
+ * Q: Minimun granularity 30min Found at
+ * https://www.youtube.com/watch?v=3Q_oYDQ2whs
  */
 
 public class calendarslots {
