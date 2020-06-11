@@ -32,7 +32,6 @@ public class recursivestaircase {
                 tmplist.add(n - set[i]);
             }
         }
-        List<Integer> results = new ArrayList<Integer>();
         for (Integer item : tmplist) {
             r += how_many_set(item, set);
         }
