@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+// Exercise from https://www.youtube.com/watch?v=5o-kdjv7FD0
 public class recursivestaircase {
     public static void main(String[] args) {
         System.out.println(how_many(5));
