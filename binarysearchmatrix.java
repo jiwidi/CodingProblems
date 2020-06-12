@@ -16,8 +16,9 @@ public class binarysearchmatrix {
                         System.out.println("Found");
                         return;
                     }
-                    break;
+
                 }
+                break;
             } else if (i == mat.length - 1) {
                 for (int j = 0; j < mat[i].length; j++) {
                     if (mat[i][j] == n) {
