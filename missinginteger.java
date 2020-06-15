@@ -1,4 +1,4 @@
-// Given an array of integers, find the first missing positive integer in linear time and constant space. 
+// Given an array of integers, find the first missing positive integer in linear time and constant space.
 // In other words, find the lowest positive integer that does not exist in the array.
 //  The array can contain duplicates and negative numbers as well
 
@@ -7,22 +7,27 @@
 import java.io.*;
 import java.util.*;
 
-import java.io.*;
-import java.util.*;
-
 public class missinginteger {
     public static void main(String[] args) {
-        Integer[] lista = {3, 4, -1, 1};
-        solution(lista);
+        Integer[] lista = { 3, 4, -1, 1 };
+        System.out.println(solution(lista));
     }
 
-    public static void solution(Integer[] lista) {
-        int minimuminteger=1;
-        for(item: lista){
-            if(item==minimuminteger){
-                minimuminteger=item;
+    public static int solution(Integer[] lista) {
+        lista[0] = 0;
+        HashSet<Integer> hashSet = new HashSet<>();
+        for (int i = 0; i < lista.length; i++) {
+            if (!hashSet.contains(lista[i])) {
+                hashSet.add(lista[i]);
             }
         }
-        System.out.println(minimuminteger);
-        
+        for (int i = 1; i < lista.length; i++) {
+            if (!hashSet.contains(i)) {
+                return i;
+            }
+        }
+        return 0;
+        // System.out.println(minimuminteger);
+
     }
+}
